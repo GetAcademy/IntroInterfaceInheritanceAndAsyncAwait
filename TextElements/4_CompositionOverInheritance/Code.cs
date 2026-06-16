@@ -7,9 +7,16 @@
 
     public class HeaderFormatter : ITextFormatter
     {
+        private char _paddingChar;
+
+        public HeaderFormatter(char paddingChar)
+        {
+            _paddingChar = paddingChar;
+        }
         public string Format(string text)
         {
-            return $"=== {text.ToUpper()} ===";
+            var padding = new string(_paddingChar, 9);
+            return padding + " " + text.ToUpper() + " " + padding;
         }
     }
 

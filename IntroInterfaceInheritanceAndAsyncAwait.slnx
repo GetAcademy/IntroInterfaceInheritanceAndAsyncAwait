@@ -3,5 +3,6 @@
     <File Path="plan.txt" />
   </Folder>
   <Project Path="DemoAsyncAwait/DemoAsyncAwait.csproj" />
+  <Project Path="Stars/Stars.csproj" Id="a802477b-5cbb-4821-a162-dee7686c3950" />
   <Project Path="TextElements/TextElements.csproj" Id="4b3da5ed-efdc-4537-9b0c-c048414b2c6c" />
 </Solution>
