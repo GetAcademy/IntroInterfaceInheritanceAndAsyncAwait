@@ -1,8 +1,8 @@
-﻿namespace StarsAndTextElementsAsIntroToInterfaceAndInheritance._1_TextElements._1_Plain
+﻿namespace TextElements._1_Simple
 {
     internal class BulletPoint 
     {
-        private string _text;
+        private readonly string _text;
 
         public BulletPoint(string text)
         {

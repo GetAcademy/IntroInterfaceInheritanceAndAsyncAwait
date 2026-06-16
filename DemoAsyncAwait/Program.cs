@@ -15,6 +15,7 @@ while (true)
 
     var keyInfo = Console.ReadKey();
     var key = keyInfo.Key;
+    Console.WriteLine();
 
     if (key == ConsoleKey.Q)
     {
@@ -27,7 +28,7 @@ while (true)
         var operationNumber = nextOperationNumber++;
         Log($"Operasjon #{operationNumber} - Async - start");
 
-        _ = SayHelloLaterAsync(operationNumber);
+        SayHelloLaterAsync(operationNumber);
     }
     else if (key == ConsoleKey.B)
     {
