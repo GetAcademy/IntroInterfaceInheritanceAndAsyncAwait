@@ -1,8 +1,8 @@
-﻿using TextElements._1_Simple;
+﻿using TextElements._2_Interface;
 
 namespace TextElements
 {
-    internal class Demo1Simple
+    internal class Demo2Interface
     {
         public static void Run()
         {
@@ -13,21 +13,14 @@ namespace TextElements
             var paragraph = new IndentedParagraph("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
             var invertedText = new InvertedText("Terje");
 
-            header.Show();
-            bulletPoint1.Show();
-            bulletPoint2.Show();
-            bulletPoint3.Show();
-            paragraph.Show();
-            invertedText.Show();
-
-            //var textElements = new object[]
-            //{
-            //    header, bulletPoint1, bulletPoint2, bulletPoint3, paragraph, invertedText
-            //};
-            //foreach (var textElement in textElements)
-            //{
-            //    textElement.Show();
-            //}
+            var textElements = new ITextElement[]
+            {
+                header, bulletPoint1, bulletPoint2, bulletPoint3, paragraph, invertedText
+            };
+            foreach (var textElement in textElements)
+            {
+                textElement.Show();
+            }
         }
     }
 }

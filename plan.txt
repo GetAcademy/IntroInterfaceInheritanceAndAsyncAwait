@@ -3,4 +3,5 @@ https://docs.google.com/document/d/1WIMy4b0AGT069DteRMYZEls1dvTadPqWBQn7siQ40Uc/
 - Litt mer forståelse av async og await som ikke-blokkerende måte å vente på
 - Enkel polymorfisme med interface og arv
 - Composition over inheritance
+- Arv og object
 KI-tematikk: sammenligne løsninger med interface, arv og komposisjon
