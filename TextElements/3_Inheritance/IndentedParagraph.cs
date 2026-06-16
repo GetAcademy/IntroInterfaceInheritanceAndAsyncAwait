@@ -2,17 +2,14 @@
 {
     internal class IndentedParagraph :TextElement
     {
-        private readonly string _text;
-
-        public IndentedParagraph(string text)
+        public IndentedParagraph(string text) : base(text)
         {
-            _text = text;
         }
 
         public override void Show()
         {
             Console.Write("    ");
-            Console.WriteLine(_text);
+            base.Show();
         }
     }
 }

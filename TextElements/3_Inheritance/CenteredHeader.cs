@@ -2,23 +2,17 @@
 {
     internal class CenteredHeader : TextElement
     {
-        private readonly string _text;
-        private readonly char _paddingChar;
-
         public CenteredHeader(string text, char paddingChar)
+            : base(CreateCenteredText(text, paddingChar))
         {
-            _paddingChar = paddingChar;
-            _text = text;
         }
 
-        public override void Show()
+        private static string CreateCenteredText(string text, char paddingChar)
         {
-            var textStartPosition = (Console.WindowWidth - _text.Length) / 2;
+            var textStartPosition = (Console.WindowWidth - text.Length) / 2;
             var padCount = textStartPosition - 4;
-            var padding = "  " + new string(_paddingChar, padCount) + "  ";
-            Console.Write(padding);
-            Console.Write(_text);
-            Console.WriteLine(padding);
+            var padding = "  " + new string(paddingChar, padCount) + "  ";
+            return padding + text + padding;
         }
     }
 }

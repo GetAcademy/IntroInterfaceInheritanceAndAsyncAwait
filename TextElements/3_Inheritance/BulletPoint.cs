@@ -2,17 +2,14 @@
 {
     internal class BulletPoint : TextElement
     {
-        private readonly string _text;
-
-        public BulletPoint(string text)
+        public BulletPoint(string text) : base(text)
         {
-            _text = text;
         }
 
         public override void Show()
         {
             Console.Write(" * ");
-            Console.WriteLine(_text);
+            base.Show();
         }
     }
 }
