@@ -1,3 +1,3 @@
 ﻿using TextElements;
 
-Demo2Interface.Run();
+Demo3Inheritance.Run();
