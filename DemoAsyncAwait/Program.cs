@@ -13,7 +13,8 @@ while (true)
         continue;
     }
 
-    var key = Console.ReadKey(intercept: true).Key;
+    var keyInfo = Console.ReadKey();
+    var key = keyInfo.Key;
 
     if (key == ConsoleKey.Q)
     {

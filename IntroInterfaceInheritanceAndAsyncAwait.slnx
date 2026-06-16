@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="DemoAsyncAwait/DemoAsyncAwait.csproj" />
+  <Project Path="TextElements/TextElements.csproj" Id="4b3da5ed-efdc-4537-9b0c-c048414b2c6c" />
 </Solution>
