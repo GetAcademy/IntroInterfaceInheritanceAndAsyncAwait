@@ -13,8 +13,8 @@
 
         public void Show()
         {
-            var startPos = (Console.WindowWidth - _text.Length) / 2;
-            var padCount = startPos - 4;
+            var textStartPosition = (Console.WindowWidth - _text.Length) / 2;
+            var padCount = textStartPosition - 4;
             var padding = "  " + new string(_paddingChar, padCount) + "  ";
             Console.Write(padding);
             Console.Write(_text);

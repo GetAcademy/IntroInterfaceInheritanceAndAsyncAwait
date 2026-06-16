@@ -2,7 +2,7 @@
 {
     internal class IndentedParagraph 
     {
-        private string _text;
+        private readonly string _text;
 
         public IndentedParagraph(string text)
         {
@@ -11,7 +11,7 @@
 
         public void Show()
         {
-            Console.CursorLeft = 4;
+            Console.Write("    ");
             Console.WriteLine(_text);
         }
     }

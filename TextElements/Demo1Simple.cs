@@ -1,6 +1,6 @@
-﻿using StarsAndTextElementsAsIntroToInterfaceAndInheritance._1_TextElements._1_Plain;
+﻿using TextElements._1_Simple;
 
-namespace StarsAndTextElementsAsIntroToInterfaceAndInheritance._1_TextElements
+namespace TextElements
 {
     internal class Demo1Simple
     {
